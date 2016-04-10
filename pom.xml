@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.devguerrilla.quickstart.camel</groupId>
+	<artifactId>camel-quickstarts-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>devguerrilla.com - Camel Quick Starts</name>
+	<url>http://www.devguerrilla.com/notes/category/programming/frameworks/camel/</url>
+	
+	<organization>
+		<url>http://www.devguerrilla.com/</url>
+		<name>devguerrilla.com</name>
+	</organization>
+
+	<modules>
+		<module>rest-deadletter-resubmitter</module>
+	</modules>
+
+	<properties>
+		<!-- Library versions -->
+		<spring.version>3.2.6.RELEASE</spring.version>
+
+		<!-- Language/Specification versions -->
+		<java.version>1.8</java.version>
+
+		<!-- Maven plugin versions -->
+		<plugin.compiler.version>3.2</plugin.compiler.version>
+
+		<!-- Test dependency versions -->
+		<junit.version>4.12</junit.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${plugin.compiler.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
